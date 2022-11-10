@@ -12,22 +12,21 @@
     </header>
 
     <main>
-      Ano de nascimento:
-      <input type="number" name="nascimento" id="nascimento"><br />
+      <section id = "dados">
+          Ano de nascimento:
+          <input type="number" name="nascimento" id="nascimento"><br />
+          Sexo:
+          <input type="radio" id="sexo-m" name="sexo" value="Masculino" />
+          <label for="sexo-m">Masculino</label>
+          <input type="radio" id="sexo-f" name="sexo" value="Feminino" />
+          <label for="sexo-f">Feminio</label><br />
+          <input type="button" value="Verificar" id="verificar" onclick="clicar()"/>
+      </section>
 
-      Sexo: 
-      <input type="radio" id="sexo-m" name="sexo" value="Masculino" />
-      <label for="sexo-m">Masculino</label>
-
-      <input type="radio" id="sexo-f" name="sexo" value="Feminino" />
-      <label for="sexo-f">Feminio</label><br />
-
-      <input type="button" value="Verificar" id="verificar" />
-
-      <section>
+      <section id ="resultado">
           <div id="texto">Detectamos homem com 20 anos.</div>
           <div id="foto">
-            <img id="imagem" src="img/Menino.jpg" alt="foto" />
+            <img id="imagem" src="img/Menina.jpg" alt="foto" />
           </div>
       </section>
     </main>
