@@ -4,21 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
-    <title>Tabuada</title>
+    <title>Intervalo com passo</title>
   </head>
   <body>
     <header><h1>Vamos contar</h1></header>
 
     <main>
       <section>
-        <p>
-          Numero: <input type="number" name="num" id="idnum" />
-          <input type="button" value="Gerar tabuada" onclick="clicar()" />
-        </p>
+        <p>Inicio: <input type="number" name="inicio" id="inicio" /></p>
+        <p>Fim: <input type="number" name="fim" id="fim" /></p>
+        <p>Passo: <input type="number" name="passo" id="passo" /></p>
+        <input type="button" value="Contar" onclick="clicar()" />
 
-        <div>
-          <select name="tabuada" id="seltab" size="11"></select>
-        </div>
+        <div id="texto">Preparando a contagem...</div>
       </section>
     </main>
 
